@@ -111,8 +111,8 @@ app.get("*", function (req, res, next) {
   res.send("\n    <!DOCTYPE html>\n    <html>\n      <head>\n        <title>SSR with RR</title>\n      </head>\n\n      <body>\n        <div id=\"app\">" + markup + "</div>\n      </body>\n    </html>\n  ");
 });
 
-app.listen(3000, function () {
-  console.log("Server is listening on port: 3000");
+app.listen(4000, function () {
+  console.log("Server is listening on port: 4000");
 });
 
 /***/ }),
