@@ -4,7 +4,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                Hello {this.props.name}
+                Hello {this.props.data}
             </div>
         )
     }
