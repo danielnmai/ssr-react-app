@@ -108,7 +108,7 @@ app.use(_express2.default.static("public"));
 app.get("*", function (req, res, next) {
   var markup = (0, _server.renderToString)(_react2.default.createElement(_App2.default, null));
 
-  res.send("\n    <!DOCTYPE html>\n    <html>\n      <head>\n        <title>SSR with RR</title>\n      </head>\n\n      <body>\n        <div id=\"app\">" + markup + "</div>\n      </body>\n    </html>\n  ");
+  res.send("\n    <!DOCTYPE html>\n    <html>\n      <head>\n        <title>SSR with RR</title>\n        <script src='/bundle.js' defer></script>\n      </head>\n\n      <body>\n        <div id=\"app\">" + markup + "</div>\n      </body>\n    </html>\n  ");
 });
 
 app.listen(4000, function () {

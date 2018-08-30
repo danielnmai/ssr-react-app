@@ -23,6 +23,7 @@ app.get("*", (req, res, next) => {
     <html>
       <head>
         <title>SSR with RR</title>
+        <script src='/bundle.js' defer></script>
       </head>
 
       <body>
