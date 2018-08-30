@@ -4,6 +4,6 @@ import App from '../shared/App'
 
 
 hydrate(
-    <App />,
+    <App name='Daniel'/>,
     document.getElementById('app')
 )

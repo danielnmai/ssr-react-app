@@ -82,7 +82,7 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.hydrate)(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
+(0, _reactDom.hydrate)(_react2.default.createElement(_App2.default, { name: 'Daniel' }), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -8066,7 +8066,8 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                'Hello World'
+                'Hello ',
+                this.props.name
             );
         }
     }]);
